@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
-          <%= csrf_meta_tags %>162 CHAPTER 3. MOSTLY STATIC PAGES
-          <%= csp_meta_tag %>
-          <%= stylesheet_link_tag 'application', media: 'all',
-          'data-turbolinks-track': 'reload' %>
-          <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all',
+    'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
   <body>
-       <%= yield %>
+    <%= yield %>
   </body>
 </html>
