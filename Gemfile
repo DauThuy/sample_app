@@ -3,6 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.6'
 
+gem 'active_storage_validations', '0.8.2' #them
+gem 'image_processing', '1.9.3'
+gem 'mini_magick', '4.9.5'
+gem 'aws-sdk-s3', '1.46.0', require: false
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 # Use sqlite3 as the database for Active Record
